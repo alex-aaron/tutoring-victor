@@ -25,8 +25,8 @@ should use the native filter method to return a new array of only the movies tha
 feature whose type is "Commentary"
 */
 
-function getCommentaries(){
-
+function getCommentaries(array){
+  
 }
 
 /*
@@ -35,6 +35,6 @@ should use the native filter method to return a new array of only the films that
 the 1980s and have 'Horror' in their genreTags array.
 */
 
-function getEightiesHorror(){
+function getEightiesHorror(array){
   
 }
