@@ -292,7 +292,9 @@ describe("Filter Practice", () => {
               }
           ]
         }
-      ]
+      ];
+
+      expect(result).to.deepEqual(correct);
     });
 
     it('should use the filter method', () => {
