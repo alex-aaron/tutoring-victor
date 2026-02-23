@@ -9,12 +9,7 @@ example output:
 */
 
 function getNumDirector(array, director){
-  return array.reduce((acc, current) => {
-    if (current.director === director){
-      acc += 1;
-    }
-    return acc;
-  }, 0);
+  
 }
 
 /*
@@ -27,11 +22,7 @@ example output:
 */
 
 function getSuspenseTitles(array){
-  return array.reduce((acc, current) => {
-    if (current.genreTags.includes('Suspense')){
-      acc.push(current.title);
-    }
-  }, []);
+  
 }
 
 /*
@@ -45,15 +36,7 @@ example output:
 */
 
 function getNumDocumentaryFeatures(array){
-  return array.reduce((acc, current) => {
-    const features = current.specialFeatures;
-    for (let i = 0; i < features.length; i++){
-      if (features[i].type === 'Documentary'){
-        acc += 1;
-      }
-    }
-    return acc;
-  }, 0);
+  
 }
 
 /*
@@ -72,8 +55,6 @@ example output:
 */
 
 function reduceObjects(array){
-  return array.reduce((acc, current) => {
-    acc[current.title] = current.year;
-    return acc;
-  })
+  
 }
+

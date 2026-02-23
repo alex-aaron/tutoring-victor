@@ -35,7 +35,7 @@ describe("Map Practice", () => {
       Array.prototype.map.restore();
     });
 
-    it("should return a new array of each film's title and year", () => {
+    it("should return a new array of each film's last special feature type and title", () => {
       const result = getLastSpecialFeature(collection);
       const correct = [
         "Interview - Hitchcock/Truffaut Interview Excerpts",
@@ -62,7 +62,7 @@ describe("Map Practice", () => {
       Array.prototype.map.restore();
     });
 
-    it("should return a new array of each film's title and year", () => {
+    it("should return a new array of objects", () => {
       const result = getMappedObjects(collection);
       const correct = [
         {
@@ -109,7 +109,7 @@ describe("Map Practice", () => {
       Array.prototype.map.restore();
     });
 
-    it("should return a new array of each film's title and year", () => {
+    it("should return an array of subarrays", () => {
       const result = getAllFeatures(collection);
       const correct = [
         ["Documentary", "Commentary", "Interview"],
