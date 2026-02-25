@@ -5,8 +5,10 @@ movie objects whose title is just two words.
 */
 
 function getTwoWordTitles(array){
-  
-}
+  array.filter(function(movie) {
+      return movie.title.split(' ').length === 2;
+  });
+};
 
 /*
 Implement the function getShortSpecialFeatures that takes in an array of movie objects.
