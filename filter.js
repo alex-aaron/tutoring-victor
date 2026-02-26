@@ -5,9 +5,7 @@ movie objects whose title is just two words.
 */
 
 function getTwoWordTitles(array){
-  array.filter(function(movie) {
-      return movie.title.split(' ').length === 2;
-  });
+ 
 };
 
 /*
@@ -17,8 +15,32 @@ objects that have a special feature that is less than 30 minutes.
 */
 
 function getShortSpecialFeatures(array){
+  return array.filter(function(movie){
+    return movie.specialFeatures.filter(function(feature){
+        return feature.length.match(/\d+/) <= 30;
+    }).length > 0;
+  });
+}
+
+
+function filter(array, func){
+  const output = [];
+  for (let i = 0; i < array.length; i++){
+    if (func(array[i], i, array)){
+      output.push(array[i]);
+    }
+  }
+  return output;
+}
+
+function map(array, func){
+  var output = [];
+  for (let i = 0; i < array.length; i++){
+    output.push(func(array[i], i, array));
+  }
   
-};
+  return output;
+}
 
 
 /*

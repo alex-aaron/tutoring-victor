@@ -14,7 +14,7 @@ describe("Reduce Practice", () => {
       expect(result).to.equal(2);
     });
 
-    it('should use the native map method', () => {
+    it('should use the native reduce method', () => {
       getNumDirector(collection, 'John Carpenter')
       Array.prototype.reduce.called.should.be.true;
     });
@@ -34,7 +34,7 @@ describe("Reduce Practice", () => {
       expect(result).to.deep.equal(correct);
     });
 
-    it('should use the native map method', () => {
+    it('should use the native reduce method', () => {
       getSuspenseTitles(collection);
       Array.prototype.reduce.called.should.be.true;
     });
@@ -53,7 +53,7 @@ describe("Reduce Practice", () => {
       expect(result).to.equal(3);
     });
 
-    it('should use the native map method', () => {
+    it('should use the native reduce method', () => {
       getNumDocumentaryFeatures(collection);
       Array.prototype.reduce.called.should.be.true;
     });

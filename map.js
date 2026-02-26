@@ -15,7 +15,7 @@ example output:
 */
 
 function getTitleAndYear(array){
-  
+
 }
 
 /*
@@ -35,7 +35,9 @@ example output:
 */
 
 function getLastSpecialFeature(array){
-  
+  return array.map(function(movie){
+    // console.log(movie.specialFeatuers[/use same principle to get last index/])
+  });
 }
 
 /*
