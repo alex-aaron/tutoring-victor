@@ -15,11 +15,7 @@ objects that have a special feature that is less than 30 minutes.
 */
 
 function getShortSpecialFeatures(array){
-  return array.filter(function(movie){
-    return movie.specialFeatures.filter(function(feature){
-        return feature.length.match(/\d+/) <= 30;
-    }).length > 0;
-  });
+  
 }
 
 
@@ -33,14 +29,7 @@ function filter(array, func){
   return output;
 }
 
-function map(array, func){
-  var output = [];
-  for (let i = 0; i < array.length; i++){
-    output.push(func(array[i], i, array));
-  }
-  
-  return output;
-}
+
 
 
 /*
